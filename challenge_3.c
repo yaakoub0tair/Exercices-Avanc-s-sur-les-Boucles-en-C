@@ -7,16 +7,16 @@ int main() {
     scanf("%d", &n);
 
     for (int i = 2; i <= n; i++) {
-        int isPrime = 1; 
+        int Flag = 1; 
 
         for (int j = 2; j <= sqrt(i); j++) {
             if (i % j == 0) {
-                isPrime = 0; 
+                Flag = 0; 
                 break;
             }
         }
 
-        if (isPrime) {
+        if (Flag) {
             printf("%d ", i);
         }
     }
